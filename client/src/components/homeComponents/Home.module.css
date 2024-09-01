@@ -1,0 +1,16 @@
+.hero_container {
+  margin-top: 100px;
+}
+
+.image_div {
+  height: 100% !important;
+}
+
+.hero_image {
+  width: 100%;
+}
+
+.test_image {
+    border-radius: 100%;
+    border: 2px,solid,red;
+}
