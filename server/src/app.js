@@ -10,14 +10,16 @@ const app = express();
 app.use(express.json());
 
 //global middleware configuration for cross origin resource sharing
-app.use(cors({ origin: ["http://localhost:3000"], credentials:true}));
+app.use(
+  cors({ origin: ["https://gomycode-blog.vercel.app"], credentials: true })
+);
 
 //global middleware configuration for cookie parser
 app.use(cookieParser());
 
 //base route
-app.get("/", (req,res) => {
-    res.send("Server is Live");
+app.get("/", (req, res) => {
+  res.send("Server is Live");
 });
 
 app.use("/users", userRouter);
